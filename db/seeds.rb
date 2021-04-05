@@ -113,9 +113,6 @@ artist33 = metal.bands.build(name:"artist33", description:"Lorem ipsum dolor sit
 artist33.save
 
 artist34 = metal.bands.build(name:"artist34", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
-artist30.save
-
-artist34 = metal.bands.build(name:"artist34", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
 artist34.save
 
 artist35 = metal.bands.build(name:"artist35", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
@@ -194,10 +191,6 @@ artist59 = pop.bands.build(name:"artist59", description:"Lorem ipsum dolor sit a
 artist59.save
 
 artist60 = pop.bands.build(name:"artist60", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
-artist60.save
-
-
-artist60 = jazz.bands.build(name:"artist60", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
 artist60.save
 
 artist61 = jazz.bands.build(name:"artist61", description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus ullam asperiores enim! Culpa ab maxime modi ad, nesciunt quas aliquam tempore ex, at ipsam officia debitis quam dolor magni?")
@@ -279,8 +272,8 @@ set11.save
 set12 = venue1.show_sets.build(band:artist12, time:"2021-05-01 23:00:00.000000000 +0000")
 set12.save
 
-set3 = venue2.show_sets.build(band:artist3, time:"2021-05-01 12:00:00.000000000 +0000")
-set3.save
+set13 = venue2.show_sets.build(band:artist3, time:"2021-05-01 12:00:00.000000000 +0000")
+set13.save
 
 set14 = venue2.show_sets.build(band:artist14, time:"2021-05-01 13:00:00.000000000 +0000")
 set14.save
