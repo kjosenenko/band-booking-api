@@ -5,7 +5,7 @@ class VenuesController < ApplicationController
   def index
     @venues = Venue.all
 
-    render json: @venues
+    render json: @venues, except: [:updated_at, :created_at]
   end
 
   # GET /venues/1

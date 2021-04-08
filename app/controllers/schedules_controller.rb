@@ -5,7 +5,7 @@ class SchedulesController < ApplicationController
   def index
     @schedules = Schedule.all
 
-    render json: @schedules
+    render json: @schedules, except: [:updated_at, :created_at]
   end
 
   # GET /schedules/1

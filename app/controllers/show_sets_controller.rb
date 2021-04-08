@@ -5,7 +5,7 @@ class ShowSetsController < ApplicationController
   def index
     @show_sets = ShowSet.all
 
-    render json: @show_sets
+    render json: @show_sets, except: [:updated_at, :created_at]
   end
 
   # GET /show_sets/1

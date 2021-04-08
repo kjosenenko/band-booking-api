@@ -5,7 +5,7 @@ class GenresController < ApplicationController
   def index
     @genres = Genre.all
 
-    render json: @genres
+    render json: @genres, except: [:updated_at, :created_at]
   end
 
   # GET /genres/1

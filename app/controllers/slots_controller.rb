@@ -5,7 +5,7 @@ class SlotsController < ApplicationController
   def index
     @slots = Slot.all
 
-    render json: @slots
+    render json: @slots, except: [:updated_at, :created_at]
   end
 
   # GET /slots/1
