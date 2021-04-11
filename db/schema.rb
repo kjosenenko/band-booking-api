@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_05_154529) do
+ActiveRecord::Schema.define(version: 2021_04_08_154520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,7 +37,6 @@ ActiveRecord::Schema.define(version: 2021_04_05_154529) do
   end
 
   create_table "show_sets", force: :cascade do |t|
-    t.datetime "time"
     t.bigint "band_id", null: false
     t.bigint "venue_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -51,6 +50,7 @@ ActiveRecord::Schema.define(version: 2021_04_05_154529) do
     t.bigint "show_set_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "time_name"
     t.index ["show_set_id"], name: "index_slots_on_show_set_id"
   end
 
